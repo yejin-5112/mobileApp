@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 이미지뷰 -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/img_1"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="20dp" />
+
+    <!-- 버튼들을 수평 정렬하는 LinearLayout -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">  <!-- 가운데 정렬로 수정 -->
+
+        <!-- 이전 이미지 버튼 -->
+        <ImageButton
+            android:id="@+id/btnPrevious"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/left"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/prev_image"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginEnd="16dp" /> <!-- 두 버튼 간의 간격을 설정 -->
+
+        <!-- 다음 이미지 버튼 -->
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/right"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/next_image"
+            android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+
+</LinearLayout>
